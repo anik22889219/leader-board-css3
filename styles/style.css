@@ -5,11 +5,10 @@
 /* ----------------------------- */
 /* -------header-styels---------- */
 /* -------------------------------- */
-nav {
+.nevicationber {
     width: 100%;
     height: 94px;
     background-color: #562EFF;
-    ;
     display: flex;
     justify-content: space-evenly;
 }
@@ -246,10 +245,14 @@ hr {
 ---------------------------------- */
 
 
-@media only screen and (max-width:688px) {
+@media only screen and (min-width:0px) and (max-width:688px) {
+    .menu {
+        grid-column-gap: 4px;
+    }
 
     .contaner {
-        width: 100%;
+        width: 80%;
+
     }
 
     .players,
@@ -275,7 +278,7 @@ hr {
 
 @media only screen and (min-width:689px) and (max-width:992px) {
     .contaner {
-        width: 100%;
+        width: 80%;
     }
 
     .players,

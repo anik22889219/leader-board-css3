@@ -188,3 +188,57 @@ hr {
     justify-content: center;
     align-items: center;
 }
+
+
+
+/* ---------------------------------- 
+--------media Queries-------------
+---------------------------------- */
+
+
+@media only screen and (max-width:688px) {
+
+    .contaner {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .lates-course {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .lates-course {
+        grid-row-gap: 10px;
+    }
+
+    .player,
+    .blog {
+        /* justify-content: center; */
+        flex-direction: column;
+    }
+}
+
+/* tablet-divices */
+/* ----------------- */
+
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .contaner {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .lates-course {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .lates-course {
+        grid-row-gap: 10px;
+
+    }
+
+
+}
